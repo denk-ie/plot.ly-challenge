@@ -84,36 +84,9 @@ function getPlots(id) {
 
         let bubble_data = [trace1];
 
-        Plotly.newPlot("bubble", bubble_data, bubble_layout); 
-
-//         let gauge_data = [
-//         {
-//         domain: { x: [0, 1], y: [0, 1] },
-//         value: parseFloat(wfreq),
-//         title: { text: `Legal Department Maturity` },
-//         type: "indicator",
-        
-//         mode: "gauge+number",
-//         gauge: { axis: { range: [null, 10] },
-//                 steps: [
-//                     { range: [0, 2], color: 'rgb(217,226,243)'},
-//                     { range: [2, 4], color: 'rgb(191,207,235)' },
-//                     { range: [4, 6], color: 'rgb(156,180,224)' },
-//                     { range: [6, 8], color: 'rgb(112,147,210)' },
-//                     { range: [8, 10], color: 'rgb(68,114,196)' },
-//                 ]}
-            
-//         }
-//         ];
-        
-//         let gauge_layout = { 
-//             width: 550, 
-//             height: 600, 
-//             margin: { t: 20, b: 0, l:0, r:170 } 
-//         };
-//         Plotly.newPlot("gauge", gauge_data, gauge_layout);
-//     });
-// } 
+        Plotly.newPlot("bubble", bubble_data, bubble_layout);
+    });
+} 
 
 function optionChanged(id) {
     getPlots(id);
